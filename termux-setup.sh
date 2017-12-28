@@ -25,8 +25,9 @@ git clone https://github.com/grahamgilbert/termux-dotfiles.git "$TMPDIR/termux-d
 
 for f in $TMPDIR/termux-dotfiles/*
 do
-  if [ "$f" != "README.md" ]; then
-    cp -f $TMPDIR/termux-dotfiles/$f "~/.${f}"
+  filename=$(basename "$f")
+  if [ "$filename" != "README.md" ]; then
+    cp -f $f "~/.${filename}"
   fi
 done
 
