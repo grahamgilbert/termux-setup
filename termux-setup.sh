@@ -15,7 +15,7 @@ else
 fi
 
 if [[ -d /data/data/com.termux/files/home/storage/downloads/src ]]; then
-  if [[! -e "~/src" ]]; then
+  if [[ ! -e "~/src" ]]; then
     ln -s /data/data/com.termux/files/home/storage/downloads/src ~/src
   fi
 fi
