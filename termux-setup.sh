@@ -31,8 +31,7 @@ for f in $TMPDIR/termux-dotfiles/*
 do
   filename=$(basename "$f")
   if [ "$filename" != "README.md" ]; then
-    rm -f "~/.${filename}"
-    cp $f "~/.${filename}"
+    ln -s $f "~/.${filename}"
   fi
 done
 
