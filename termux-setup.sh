@@ -4,10 +4,8 @@
 # Get the storage set up
 termux-setup-storage
 
-wget -O - https://its-pointless.github.io/setup-pointless-repo.sh | sh
-
 # Install some packages
-pkg install -y nano git openssh python python-dev python2 python2-dev coreutils proot ruby ruby-dev libllvm gsl g++ make libffi libffi-dev termux-exec openssl-dev libgmp-dev libev-dev c-ares-dev libcrypt-dev llvm
+apt install -y nano git openssh python python-dev python2 python2-dev coreutils proot ruby ruby-dev libllvm gsl g++ make libffi libffi-dev termux-exec openssl-dev libgmp-dev libev-dev c-ares-dev libcrypt-dev llvm
 
 gem install bundler
 
